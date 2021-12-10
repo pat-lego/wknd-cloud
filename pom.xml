@@ -21,6 +21,13 @@
     <version>0.0.1-SNAPSHOT</version>
     <description>aemsupportapacgeneralsandbox3</description>
 
+    <repositories>
+        <repository>
+            <id>project-repository</id>
+            <url>file://${project.basedir}/../repository</url>
+        </repository>
+    </repositories>
+
     <modules>
         <module>all</module>
         <module>core</module>
@@ -681,6 +688,12 @@
                 <artifactId>slf4j-test</artifactId>
                 <version>1.0.1</version>
                 <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.adobe.aem</groupId>
+                <artifactId>wknd</artifactId>
+                <version>1.0.0</version>
+                <type>zip</type>
             </dependency>
         </dependencies>
     </dependencyManagement>
