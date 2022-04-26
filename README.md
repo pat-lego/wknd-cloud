@@ -60,3 +60,14 @@ The project comes with the auto-public repository configured. To setup the repos
 ## Local Maven Repository Created
 
 https://medium.com/@jakubtutko/maven-repository-inside-your-project-4c55b4d73be8
+
+Here is an example command used to create the local repository:
+mvn install:install-file \
+   -Dfile=/Users/patriquelegault/Downloads/aem-guides-wknd.all-1.1.0-classic.zip \
+   -DgroupId=com.adobe.aem \
+   -DartifactId=wknd \
+   -Dversion=1.0.0 \
+   -Dpackaging=zip \
+   -DlocalRepositoryPath=./wknd-cloud/repository
+
+Note that I created it outside of the AEM Project
